@@ -13,9 +13,8 @@ header {
         height: 10dvh;
         padding-bottom: 2dvh;
 
-        span {
+        h1 {
             color: $gray;
-            font-size: 2rem;
             margin-top: 2dvh;
         }
 
@@ -31,6 +30,10 @@ header {
         nav {
             display: flex;
             flex-direction: row;
+
+            i {
+                margin-bottom: 2dvh;
+            }
         }
     }
 }

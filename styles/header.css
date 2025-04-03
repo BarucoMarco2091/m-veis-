@@ -13,9 +13,8 @@ header nav {
   height: 10dvh;
   padding-bottom: 2dvh;
 }
-header nav span {
+header nav h1 {
   color: #6C757D;
-  font-size: 2rem;
   margin-top: 2dvh;
 }
 header nav i {
@@ -28,5 +27,8 @@ header nav i {
   header nav {
     display: flex;
     flex-direction: row;
+  }
+  header nav i {
+    margin-bottom: 2dvh;
   }
 }/*# sourceMappingURL=header.css.map */
