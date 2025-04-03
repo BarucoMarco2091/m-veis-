@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+
+header {
+    background-color: $wood;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        max-width: 1240px;
+        margin: auto;
+        height: 10dvh;
+        padding-bottom: 2dvh;
+
+        span {
+            color: $gray;
+            font-size: 2rem;
+            margin-top: 2dvh;
+        }
+
+        i {
+            color: $blue;
+            margin-right: 2dvh;
+            margin-top: 2dvh;
+            margin-bottom: 2dvh;
+        }
+    }
+
+    @media (width >= 1024px) {
+        nav {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

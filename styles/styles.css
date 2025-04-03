@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+header {
+  background-color: #A67C52;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: auto;
+  height: 10dvh;
+}
+header nav span {
+  color: #6C757D;
+  font-size: 2rem;
+  margin-top: 2dvh;
+}
+header nav i {
+  color: #0D6EFD;
+  margin-right: 2dvh;
+  margin-top: 2dvh;
+}
+
+.about {
+  display: flex;
+  padding-top: 5dvh;
+  text-align: center;
+}
+.about h1, .about p {
+  margin: 3dvh 3dvh;
+}
+@media (width >= 1024px) {
+  .about .about {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.testimonials {
+  max-width: 1240px;
+  margin: auto;
+}
+.testimonials h2 {
+  text-align: center;
+  margin: 10dvh 5dvh;
+}
+.testimonials .grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 3dvh;
+  padding: 1dvh 1dvh;
+}
+.testimonials .grid .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2dvh;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+.testimonials .grid .card img {
+  width: 100%;
+  height: 50dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 1s;
+  filter: brightness(50%);
+}
+.testimonials .grid .card img:hover {
+  transform: scale(1.1);
+}
+.testimonials .grid .card .card-testimonials {
+  color: rgba(12, 12, 12, 0.973);
+  text-align: center;
+  padding: 2dvh 2dvh;
+  line-height: 2rem;
+}
+.testimonials .grid .card .card-name {
+  color: rgba(12, 12, 12, 0.973);
+  text-align: center;
+  padding: 2dvh 2dvh;
+  font-weight: 500;
+}
+@media (width >= 1024px) {
+  .testimonials .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  margin: auto;
+}
+.location h2 {
+  text-align: center;
+  margin-top: 5dvh;
+  margin-bottom: 5dvh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  background-color: #A67C52;
+}
+
+main {
+  background-color: #F8F9FA;
+}
+
+footer {
+  background-color: #A67C52;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  outline: none;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  color: rgba(12, 12, 12, 0.973);
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+  font-family: "Roboto", serif;
+  color: rgba(12, 12, 12, 0.973);
+}
+
+a {
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  color: #F8F9FA;
+  cursor: pointer;
+}
+
+i {
+  font-size: 1.3rem;
+  color: #F8F9FA;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  background-color: rgba(12, 12, 12, 0.973);
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+}
+
+@media (width <= 768px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

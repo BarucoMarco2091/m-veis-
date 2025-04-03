@@ -1,0 +1,9 @@
+@import '../styles/variables.scss';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3dvh 3dvh;
+}

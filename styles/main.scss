@@ -1,0 +1,100 @@
+@import '../styles/variables.scss';
+
+main {
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        max-width: 1240px;
+        margin: auto;
+        padding-top: 5dvh;
+        text-align: center;
+    
+        div {
+            flex: 1;
+        }
+    
+        h1, p {
+            margin: 3dvh 3dvh;
+        }
+    
+        @media (width >= 1024px) {
+            .about {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    
+    .testimonials {
+        max-width: 1240px;
+        margin: auto;
+    
+        h2 {
+            text-align: center;
+            margin: 10dvh 5dvh;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            gap: 3dvh;
+            padding: 1dvh 1dvh;
+    
+            .card {
+                display: flex;
+                flex-direction: column;
+                border-radius: 2dvh;
+                box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+                overflow: hidden;
+    
+                img {
+                    width: 100%;
+                    height: 50dvh;
+                    object-fit: cover;
+                    transition: transform 1s;
+                    filter: brightness(50%);
+                }
+    
+                img:hover {
+                    transform: scale(1.1);
+                }
+    
+                .card-testimonials {
+                    color: $black;
+                    text-align: center;
+                    padding: 2dvh 2dvh;
+                    line-height: 2rem;
+                }
+    
+                .card-name {
+                    color: $black;
+                    text-align: center;
+                    padding: 2dvh 2dvh;
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        @media (width >=1024px) {
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+        }
+    }
+    
+    .location {
+        display: flex;
+        flex-direction: column;
+        max-width: 1240px;
+        margin: auto;
+        padding-bottom: 5dvh;
+    
+        h2 {
+            text-align: center;
+            margin-top: 5dvh;
+            margin-bottom: 5dvh;
+        }
+    }
+}
